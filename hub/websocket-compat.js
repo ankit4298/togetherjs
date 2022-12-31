@@ -24,8 +24,8 @@ WebSocketRequest.prototype.handleConnectionClose =
 WebSocketRequest.prototype.broadcastUTF =
   WebSocketServer.prototype.broadcastUTF;
 
-var miksagoServerFactory = require('websocket-server');
-var miksagoConnection = require('../node_modules/websocket-server/lib/ws/connection');
+var miksagoServerFactory = require('node-websocket-server');
+var miksagoConnection = require('../node_modules/node-websocket-server/lib/ws/connection');
 
 var CompatWebSocketServer = function(options) {
   events.EventEmitter.call(this); // superclass constructor
